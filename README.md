@@ -1,2 +1,0 @@
-# techdocs
-cebcar technical documentation
