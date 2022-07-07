@@ -1,0 +1,73 @@
+COMMON SHORTCUTS,⌘ + N,New file
+,⌘ + Shift + N,New window
+,⌘ + P,Open file (type the name to perform a search)
+,⌘ + O,Open new file
+,⌘ + Shift + O,Open folder
+,⌘ + S,Save
+,⌘ + Shift + S,Save as
+,⌘ + W,Close tab
+,⌘ + Shift + W,Close window
+,⌘ + Option + R,Reload Atom
+,⌘ + B,Browse list of open files
+,⌘ + Shift + P,Opens and closes the command palette
+,⌘ + Alt + Arrow Left,Cycles left through open tabs
+,⌘ + Alt + Arrow Right,Cycles right through open tabs
+,"⌘ + ,",Opens Preferences/Settings
+,⌘ + Shift + L,Selects the language the file is in
+,⌘ + Shift + I,Opens the Chrome Developer Tools
+,Option + Shift + S,Show available code snippets
+,⌘ + Shift + M,Markdown preview
+,⌘ + Option + I,Toggle Developer Tools
+,⌘ + Shift + =,Increase text size
+,⌘ + Shift + -,Decrease text size
+,⌘ + 0 (zero),Reset text size
+,F11,Toggle full screen
+MANAGE LINES,⌘ + G,Go to line
+,⌘ + L,Select line
+,⌘ + Shift + D,Duplicate line
+,⌘ + Shift + K,Delete line
+,⌘ + Arrow Up,Move line up
+,⌘ + Arrow Down,Move line down
+,⌘ + /,Toggle comment line
+,⌘ + Return,New line below
+,⌘ + [,Indent selected lines
+,⌘ + ],Outdent selected lines
+,⌘ + J,Join lines
+MANAGE WORDS AND BRACKETS,Option + H,Delete until beginning of the current word
+,Option + D,Delete until end of the current word
+,⌘ + Option + .,Complete bracket
+,⌘ + M,Go to the matching bracket
+,⌘ + Option + M,Select code inside matching brackets
+FIND AND REPLACE,⌘ + F,Find in current file
+,⌘ + Shift + F,Find in project
+,F3,Find next
+,Shift + F3,Find previous
+,⌘ + Enter,Replace all
+,⌘ + Option + /,Use Regex in search
+,⌘ + Option + C,Match case in search
+,⌘ + Option + S,Search only in selection
+,⌘ + Option + W,Match whole word
+TREE VIEW,Option + \,Toggle focus tree view
+,⌘ + \,Toggle tree view
+,J,Select next item
+,K,Select previous item
+,Arrow Right,Expand selected directory
+,Arrow Left,Collapse selected directory
+,Option + Arrow Left,Recursively expand directories
+,Option + Arrow Right,Recursively collapse directories
+,Return,Open selected item
+,F2,Move selected item
+,Delete,Delete current item
+,D,Duplicate selected item
+,⌘ + 1 ... 9,Open selected item in pane 1 ... 9
+,A,Add new file
+,Shift + A,Add new folder
+,I,Toggle display of VCS ignored files
+DIFFS AND CODE FOLDING,"Option + G, then D",Toggle list of diffs in the file
+,"Option + G, then Arrow Down",Move to next diff in the file
+,"Option + G, then Arrow Up",Move to previous diff in the file
+,⌘ + K then ⌘ + 1 ... 9,Fold all code at indent level 1 ... 9
+,⌘ + Option + /,Fold / unfold code
+,⌘ + Option + F,Fold selected code
+,⌘ + Option + [,Fold all code
+,⌘ + Option + ],Unfold all code
