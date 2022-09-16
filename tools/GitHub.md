@@ -9,6 +9,59 @@ WebApp @ https://github.com<br/>
 
 ## Using GitHub
 
+### Connect to GitHub via SSH
+NOTE: GitHub advice is to use ONLY the SSH Agent provided with macOS.
+
+Generate SSH Keys
+- generate public and private keys; save at ~/.ssh/id_ed25519
+```shell
+ssh-keygen -t ed25519 -C "my-private-github-email" [Enter to save at ~/.ssh/id_ed25519 (default); supply passphrase]
+```
+
+Configure SSH
+- if ~/.ssh/config does not exist, `touch` to create it
+- add ~/.ssh/config content:
+```plaintext
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+- add SSH private key to SSH Agent
+```
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+```
+
+Authenticate with GitHub via SSH
+- copy content of ~/.ssh/id_ed25519/ to GitHub
+```
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+- add SSH public key to GitHub
+
+  - &lt;username&gt; : Settings : Access : SSH &amp; GPG Keys
+    - Title: "My Mac"
+    - "Authentication" key
+    - New SSH Key; paste in key<br><br>
+
+- verify connection
+  - via SSH Agent
+```shell
+eval "$(ssh-agent -s)"
+```
+
+  - via GitHub
+```shell
+ssh -T git@github.com
+```
+
+  - if this gives warning about"authenticity of host 'github.com (IP ADDRESS)'":
+    check key in message against public key; if matching, type "yes"
+  - verify `username` in resulting message
+    > NOTE: This command has exit code 1.
+
 ### Create New Repository
 GitHub : ‘cebcar’ : New
 - supply repo Name and Description
