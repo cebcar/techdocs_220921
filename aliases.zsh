@@ -4,4 +4,5 @@ alias gbs="git for-each-ref --sort=committerdate refs/heads/ --format='%(committ
 alias gtb='mkdir -p .cebcar; branchlist=".cebcar/branchlist"; git branch | grep -n "[a-z,A-Z]" > $branchlist; git branch | grep -n "[a-z,A-Z]" > $branchlist; cat $branchlist; echo -n "Select: "; read lineno; tb=$(cat $branchlist | grep "$lineno:" | cut -c 5-); echo "tb: $tb"; rm $branchlist'
 alias gsb='autoload -U colors && colors;echo "\n====>>\n=====>>\n";git status;echo "\nall branches:";git branch; echo "temp: $fg[cyan]$tb$reset_color\n"; echo "unmerged branches:\n";git branch --no-merged'
 alias glgr='git log --oneline --graph'
-alias glog='git log --oneline --graph -6'
+alias glog='git log --oneline -6'
+alias ldt='git log --graph --decorate -30 --all --date-order --date=format:"%Y-%m-%d %H:%M:%S" --pretty=format:"%C(cyan)%h%Creset %C(black bold)%ad%Creset%C(auto)%d %s"'
